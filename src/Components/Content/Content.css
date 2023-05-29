@@ -1,0 +1,36 @@
+.title {
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  border-top: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1rem;
+}
+
+.content:last-child {
+  border-bottom: none;
+}
+
+.content:first-child {
+  border-top: none;
+}
+
+.content span {
+  font-size: 1.3rem;
+}
+
+.info {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 650px) {
+  .content span {
+    font-size: 0.8rem;
+  }
+}

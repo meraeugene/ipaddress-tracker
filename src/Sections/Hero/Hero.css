@@ -1,0 +1,176 @@
+.ip__address-tracker-form input.invalid-input {
+  border: 3px solid red !important;
+}
+
+.ip__address-tracker-form input.invalid-input::placeholder {
+  color: red !important;
+}
+
+button.invalid-input {
+  background-color: red !important;
+  border: 3px solid red !important;
+  outline: none !important;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ip__address-tracker h1 {
+  font-size: 4rem;
+  color: #e7bee6;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ip__address-tracker p {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  max-width: 570px;
+  margin-bottom: 2rem;
+}
+
+.ip__address-tracker-form {
+  display: flex;
+  align-items: center;
+}
+
+.ip__address-tracker-form input {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  backdrop-filter: blur(8px) saturate(93%);
+  -webkit-backdrop-filter: blur(8px) saturate(93%);
+  background-color: rgba(17, 25, 40, 0.37);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: #e7bee6;
+  padding: 1rem;
+  border: 3px solid #e7bee6;
+}
+
+.ip__address-tracker-form input::placeholder {
+  color: #e7bee6;
+}
+
+.ip__address-img {
+  max-width: 580px;
+}
+
+.ip__address-img img {
+  object-fit: cover;
+  width: 100%;
+}
+button {
+  padding: 1rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #e7bee6;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+  display: block;
+  top: 50%;
+  outline: none;
+  border: 3px solid #e7bee6;
+}
+
+button::after,
+button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+button::after {
+  width: 30px;
+  height: 2px;
+  background: #000;
+  transform: translateX(-3px);
+  margin-top: 0px;
+}
+
+button::before {
+  content: "";
+  transform: rotate(-135deg) translateX(50%);
+  width: 11px;
+  height: 11px;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-top: -1px;
+}
+
+button:hover {
+  padding: 1rem 60px 1rem 20px;
+}
+
+button:hover::after,
+button:hover::before {
+  opacity: 1;
+  right: 15px;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ip__address-tracker h1 {
+    font-size: 1.5rem;
+  }
+
+  .ip__address-tracker p {
+    font-size: 0.9rem;
+  }
+
+  .ip__address-tracker {
+    margin-top: 3rem;
+  }
+
+  .container {
+    gap: 2rem;
+  }
+
+  .ip__address-img {
+    max-width: 500px;
+  }
+
+  .ip__address-tracker-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .ip__address-tracker-form input {
+    padding: 0.7rem;
+    border-radius: 4px !important;
+    font-size: 0.8rem;
+  }
+
+  button {
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  button:hover {
+    padding: 0.7rem 60px 0.7rem 20px;
+  }
+}
