@@ -127,8 +127,11 @@ button:hover::before {
 @media screen and (max-width: 1150px) {
   .container {
     flex-direction: column;
-    margin-top: 5rem;
     gap: 2rem;
+  }
+
+  .ip__address-tracker {
+    margin-top: 3rem;
   }
 }
 
@@ -142,7 +145,7 @@ button:hover::before {
   }
 
   .ip__address-tracker {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .container {
