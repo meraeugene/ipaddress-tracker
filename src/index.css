@@ -10,18 +10,18 @@
 
 .bg {
   min-height: 100vh;
-  padding: 2rem 4rem;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2),
-      rgba(127, 17, 224, 0.1)
-    ),
-    url(./images/vecteezy_banner-background-full-color-purple-and-black-gradations_17396310.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 3rem 6rem;
+  background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #874086,
+    #642b73
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #874086,
+    #642b73
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* map */
@@ -39,5 +39,11 @@
   /* map */
   .leaflet-container {
     height: 70vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bg {
+    padding: 1rem 1.5rem;
   }
 }

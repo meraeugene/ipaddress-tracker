@@ -16,7 +16,7 @@ nav {
 .navbar-links li a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #e7bee6;
+  color: #eec4ea;
 }
 
 .navbar-logo img {
@@ -38,6 +38,16 @@ nav {
 
 .menu {
   display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .navbar-links {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {

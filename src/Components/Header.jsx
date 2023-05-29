@@ -17,7 +17,7 @@ const Header = () => {
       <nav>
         <div className="navbar-logo">
           <a href="#home">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" style={{ width: "30px" }} />
           </a>
         </div>
         <ul className="navbar-links">
@@ -38,7 +38,7 @@ const Header = () => {
         <img
           src={menubar}
           alt="menubar"
-          style={{ width: "40px" }}
+          style={{ width: "30px" }}
           onClick={handleToggleMenu}
           className="menu"
         />

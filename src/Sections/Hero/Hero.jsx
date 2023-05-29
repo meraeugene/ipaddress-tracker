@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Hero.css";
-import bg from "../../images/bg-removebg.png";
+import bg from "../../images/bg-removebg2.png";
 import { useNavigate } from "react-router-dom";
 import Header from "../../Components/Header";
 
