@@ -147,19 +147,19 @@ button:hover::before {
 
 @media screen and (max-width: 650px) {
   .ip__address-tracker h1 {
-    font-size: 1.7rem;
-    text-align: left;
+    font-size: 1.8rem;
+    text-align: center;
   }
 
   .ip__address-tracker p {
-    font-size: 0.7rem;
-    margin-bottom: 1rem;
-    text-align: justify;
+    font-size: 1rem;
+    margin-bottom: 1.7rem;
+    text-align: center;
     max-width: 100% !important;
   }
 
   .ip__address-tracker {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .container {
@@ -177,18 +177,18 @@ button:hover::before {
   }
 
   .ip__address-tracker-form input {
-    padding: 0.7rem;
+    padding: 1rem;
     border-radius: 4px !important;
     font-size: 0.8rem;
   }
 
   button {
     border-radius: 4px;
-    padding: 0.7rem 1rem;
+    padding: 1rem;
     font-size: 0.8rem;
   }
 
   button:hover {
-    padding: 0.7rem 60px 0.7rem 20px;
+    padding: 1rem 60px 1rem 20px;
   }
 }
