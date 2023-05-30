@@ -31,3 +31,9 @@
     height: 100%;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .flex {
+    gap: 2rem;
+  }
+}

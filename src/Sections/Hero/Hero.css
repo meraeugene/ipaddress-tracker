@@ -177,18 +177,18 @@ button:hover::before {
   }
 
   .ip__address-tracker-form input {
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 4px !important;
     font-size: 0.8rem;
   }
 
   button {
     border-radius: 4px;
-    padding: 1rem;
+    padding: 0.7rem;
     font-size: 0.8rem;
   }
 
   button:hover {
-    padding: 1rem 60px 1rem 20px;
+    padding: 0.7rem 60px 0.7rem 20px;
   }
 }
